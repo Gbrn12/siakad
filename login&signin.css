@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Form container */
+form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Form labels */
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="password"],
+select {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    outline: none;
+}
+
+/* Custom select styles */
+.custom-select {
+    position: relative;
+    margin-top: 10px;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.custom-select select:focus {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    outline: none;
+}
+
+.custom-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #333;
+    pointer-events: none;
+}
+
+/* Option text color */
+.custom-select select option {
+    color: #000;
+}
+
+/* Submit button */
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Link to login */
+a {
+    display: block;
+    margin-top: 15px;
+    color: #3498db;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Wave effect */
+.wave {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+}
